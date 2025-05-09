@@ -1,0 +1,374 @@
+/* Noticias.css */
+
+/* Esto permite que todo el contenido de la página sea desplazable */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  min-height: 100vh;
+
+}
+
+/* Contenedor principal para separar el título del texto */
+.noticias-wrapper {
+  margin-top: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contenedor para la imagen de FFCV */
+.ffcv-image-container {
+  margin-bottom: 20px;
+}
+
+/* Estilo de la imagen de FFCV */
+.ffcv-image {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección */
+.noticias-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Contenedor del texto informativo */
+.noticias-container {
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+
+}
+.noticias-container a {
+  color: #ffffff; 
+   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+/* Párrafos informativos */
+.noticias-container p {
+  font-size: 1.1rem;
+  color: #f9f9f9;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Estilo para el texto de "Más información..." */
+.info-text {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Estilo del texto adicional que aparece al hacer clic */
+.extra-info {
+  background-color: #222;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  color: #f9f9f9;
+  font-size: 1.1rem;
+}
+
+/* Estilo para el carrusel de noticias */
+.noticias-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Estilo para las flechas de navegación */
+.carousel-arrow {
+  font-size: 2rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  color: #0056b3;
+}
+
+
+
+/* Estilo para la imagen de fondo de la noticia */
+.noticia-castellon {
+  position: relative;
+  background-image: url('https://pbs.twimg.com/media/F6FJj2RWYAAvAHh.jpg:large');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 750px;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.noticia-villarreal {
+  position: relative;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/027/011/256/non_2x/villarreal-cf-club-symbol-logo-white-la-liga-spain-football-abstract-design-illustration-with-black-background-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 750px;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.noticia-villarreal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.noticia-villarreal>* {
+  position: relative;
+  z-index: 1;
+}
+
+
+.noticia-valencia {
+  position: relative;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/027/011/591/non_2x/valencia-club-symbol-logo-white-la-liga-spain-football-abstract-design-illustration-with-black-background-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 750px;
+  height: 500px;
+  margin: 20px auto;
+  
+}
+
+.noticia-valencia::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  z-index: 0;
+ 
+}
+
+.noticia-valencia>* {
+  position: relative;
+  z-index: 1;
+ 
+}
+
+
+
+/* Añadir una distinción en color para los enlaces */
+.noticia-item a {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.noticia-item a:hover {
+  color: #000000;
+}
+.noticia-captacion {
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+}
+
+.noticia-captacion h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.noticia-captacion p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.noticia-captacion ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.noticia-captacion a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.noticia-captacion a:hover {
+  color: #005fa3;
+}
+
+.leer-mas {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1em;
+  color: #0077cc;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.leer-mas:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+.imagenes-noticia {
+  display: flex;
+  gap: 10px;  /* Espacio entre las imágenes */
+  justify-content: center;  /* Centra las imágenes */
+  margin: 20px 0;
+}
+
+/* Estilo para las imágenes de la noticia */
+.imagen-noticia {
+  width: 45%;  /* Las imágenes ocuparán el 45% del ancho disponible */
+  height: auto;  /* Mantener la proporción de la imagen */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;  /* Mantiene la imagen bien ajustada, sin distorsión */
+}
+
+
+/* Estilo para el título principal "NOTICIAS" */
+.noticias-title {
+  font-size: 2rem;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Sombra negra */
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+/* Estilo para "OFERTAS DESTACADAS" */
+.ofertas-destacadas-title {
+  font-size: 1.4rem;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Sombra negra */
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* Estilo para "Captación FFCV" */
+.captacion-ffcv-title {
+  font-size: 1.4rem;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Sombra negra */
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .noticias-wrapper {
+    padding: 0 15px;
+  }
+
+  .noticias-title,
+  .ofertas-destacadas-title,
+  .captacion-ffcv-title {
+    font-size: 1.5rem;
+    padding: 8px 10px;
+  }
+
+  .noticias-container {
+    padding: 20px;
+  }
+
+  .noticia-castellon,
+  .noticia-valencia,
+  .noticia-villarreal {
+    height: auto;
+    padding: 20px;
+  }
+
+  .imagenes-noticia {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .imagen-noticia {
+    width: 100%;
+  }
+
+  .carousel-arrow {
+    font-size: 1.5rem;
+  }
+
+  .ffcv-image {
+    width: 100%;
+  }
+
+  .noticias-container p,
+  .noticia-captacion p {
+    font-size: 1rem;
+  }
+
+  .noticia-captacion h2 {
+    font-size: 1.3rem;
+  }
+}

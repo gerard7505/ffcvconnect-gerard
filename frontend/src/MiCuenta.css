@@ -1,0 +1,9 @@
+.mi-cuenta-container {
+    padding: 20px;
+    margin-bottom: 50px; /* Añadir margen inferior para separar del footer */
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+  }
+  
